@@ -1,4 +1,4 @@
-print("yosha")
+
 import math
 
 def minimax (curDepth, nodeIndex,
