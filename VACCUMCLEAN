@@ -1,0 +1,17 @@
+import random
+
+class VacuumCleaner:
+    def _init_(self):
+        self.location = random.choice(["A", "B"])
+
+    def move(self):
+        self.location = "A" if self.location == "B" else "B"
+
+    def run(self, steps):
+        for _ in range(steps):
+            print(f"no dirt: {self.location}")
+            self.move()
+
+if _name_ == "_main_":
+    vacuum = VacuumCleaner()
+    vacuum.run(5)
