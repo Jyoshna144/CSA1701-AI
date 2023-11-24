@@ -1,4 +1,4 @@
-print("yosha")
+
 def is_safe(graph, node, color, coloring):
     for neighbor in graph[node]:
         if neighbor in coloring and coloring[neighbor] == color:
